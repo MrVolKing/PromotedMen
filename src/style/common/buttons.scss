@@ -1,0 +1,37 @@
+.button{
+    width: rem(180);
+    height: rem(40);
+    background-color: $brand_color;
+    border: none;
+    outline: none;
+    color: $white;
+    font-family: "Open Sans";
+    font-size: rem(18);
+    font-weight: 400;
+    &:hover{
+        background-color: $brand_color_hover;
+    }
+    &:active{
+        background-color: $brand_color;
+    }
+    &_gray{
+        background-color: #20201f;
+        &:hover{
+            background-color: $white;
+            color: #20201f;
+            box-shadow: rem(1) rem(1) rem(7) rem(1) rgba(0, 0, 0, 0.6);
+        }
+        &:active{
+            box-shadow: none;
+        }
+    }
+    
+}
+
+@media screen and (max-width:769px){
+    .button{
+        width: rem(120);
+        height: rem(26);
+        font-size: 14px;
+    }
+}

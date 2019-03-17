@@ -1,0 +1,18 @@
+.subtitle{
+    text-align: center;
+    h3{
+        color: #282828;
+        font-size: rem(23);
+        line-height: rem(35);
+    }    
+}
+
+@media screen and (max-width:769px){
+    .subtitle{
+        h3{
+            color: #282828;
+            font-size: rem(17);
+            line-height: rem(20);
+        } 
+    }
+}

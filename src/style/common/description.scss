@@ -1,0 +1,21 @@
+.desc{
+    p{
+        font-size: rem(18);
+        font-weight: 400;
+        color: $maintext;
+    }
+    &_bigfont{
+        p{
+            
+        }
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .desc{
+        p{
+            font-size: 15px;
+        }
+    }
+}

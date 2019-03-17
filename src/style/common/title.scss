@@ -1,0 +1,17 @@
+.title{
+    text-align: center;
+    h2{
+        color: $brand_color_hover;
+        font-size: rem(50);
+        font-weight: 400;
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .title{
+        h2{
+            font-size: 24px;
+        }
+    }
+}

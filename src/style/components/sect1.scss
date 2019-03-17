@@ -1,0 +1,156 @@
+.sect1{
+    position: relative;
+
+    .swiper-slide{
+        height: rem(700);
+        background-size: 100% 101%;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: rem(161);
+
+        &__content{
+            height: 100%;
+            padding-top: rem(237);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &_pad{
+                padding-top: rem(308);
+            }
+        }
+
+        &__title{
+            text-align: center;
+            h1{
+                font-size: rem(70);
+                font-weight: 700;
+                text-shadow: rem(2) rem(3) rem(4) rgba(0, 0, 0, 0.75);
+                color: $white;
+            }
+        }
+
+        &__desc{
+            text-align: center;
+            p{
+                font-size: rem(40);
+                font-weight: 400;
+                text-shadow: rem(2) rem(3) rem(4) rgba(0, 0, 0, 0.75);
+                color: $white;
+            }
+        }
+
+        &__button{
+            text-align: center;
+            padding-top: rem(55);
+        }
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        outline: none;
+        opacity: 1 !important;
+        width: rem(37);
+        height: rem(58);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        svg{
+            fill: $brand_color;
+            width: 100%;
+            height: 100%;
+        }
+        &:hover{
+            svg{
+                fill: $brand_color_hover;
+            }
+        }
+    }
+
+    .swiper-button-prev{
+        left: rem(71);
+    }
+
+    .swiper-button-next{
+        right: rem(71);
+    }
+
+    .swiper-pagination{
+        left: 0;
+        bottom: rem(40);
+    }
+
+    .swiper-pagination-bullet{
+        width: rem(20);
+        height: rem(20);
+        background-color: #20201f;
+        border-radius: 0;
+        margin-right: rem(20);
+        opacity: 1 !important;
+        &:hover{
+            box-shadow: rem(1) rem(1) rem(7) rem(1) rgba(0, 0, 0, 0.6);
+            background-color: $brand_color_hover;
+        }
+        &.swiper-pagination-bullet-active{
+            box-shadow: rem(1) rem(1) rem(7) rem(1) rgba(0, 0, 0, 0.6);
+            background-color: $white;
+        }
+    }
+
+    
+}
+
+
+@media screen and (max-width:769px){
+    .sect1{
+
+        .swiper-slide{
+            height: 50vw;
+            padding: 0;
+
+            &__content{
+                padding: 0;
+                justify-content: center;
+            }
+
+            &__title{
+                margin-bottom: 10px;
+                h1{
+                    font-size: 30px;
+                }
+            }
+
+            &__desc{
+                margin-bottom: 10px;
+                p{
+                    font-size: 16px;
+                }
+            }
+
+            &__button{
+                padding: 0;
+            }
+        }
+
+        .swiper-button-prev, .swiper-button-next{
+            width: 20px;
+            height: 30px;
+            svg{
+                fill: $brand_color_hover;
+            }
+        }
+
+        .swiper-button-prev{
+            left: 10px;
+        }
+
+        .swiper-button-next{
+            right: 10px;
+        }
+
+        .swiper-pagination{
+            display: none;
+        }
+        
+    }
+}

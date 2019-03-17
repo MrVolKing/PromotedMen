@@ -1,0 +1,42 @@
+    // adapt menu
+
+
+@media screen and (max-width:769px){
+    .adaptmenu{
+        transform: translateX(100%);
+        transition: 1s;
+        width: 75vw;
+        background-color: $bg_color;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000000;
+        top: 0;
+        right: 0;
+        padding: 20px;
+    
+        &__item{
+            margin-bottom: 16px;
+            a{
+                color: $maintext;
+                font-size: 18px;
+            }
+            
+        }  
+    }
+
+    .close{
+        width: 24px;
+        display: block !important;
+        margin-bottom: 40px;
+        img{
+            width: 100%;
+        }
+    }
+    
+}
+
+
+.adaptmenu_active{
+    transform: translateX(0);
+}
+

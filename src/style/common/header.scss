@@ -1,0 +1,141 @@
+.header{
+    background-color: #20201f;
+    padding: rem(20) 0;
+    border-bottom: rem(2) solid #ff6c00;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        img{
+            width: rem(265);
+            height: rem(60);
+        }
+    }
+    .close{
+        display: none;
+    }
+
+    &__form{
+        display: flex;
+    }
+
+    &__input{
+        input{
+            width: rem(180);
+            height: rem(40);
+            border: rem(1) solid #525252;
+            background-color: #20201f;
+            padding-left: rem(11);
+            padding-right: rem(11);
+            margin-right: rem(20);
+            color: #adadad;
+            font-family: "Open Sans";
+            font-size: rem(20);
+            font-weight: 400;
+            outline: none;
+            caret-color: #adadad;
+            &:focus{
+                border: rem(1) solid #f26b08;
+
+            }
+            @include placeholder{
+                color: #adadad;
+                font-family: "Open Sans";
+                font-size: rem(20);
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__button{
+        button{
+            width: rem(100);
+            height: rem(40);
+            background-color: $brand_color;
+            border: none;
+            cursor: pointer;
+            color: $white;
+            font-size: rem(18);
+            font-weight: 400;
+            &:hover{
+                background-color: #f26b08;
+            }
+        }
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__burger{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:769px){
+    .header{
+
+        &__logo{
+            img{
+                width: 130px;
+                height: 30px;
+            }
+        }
+
+        &__right{
+            align-items: flex-start;
+        }
+
+        &__form{
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__input{
+            margin-bottom: 30px;
+            input{
+                width: 50%;
+                font-size: 16px;
+                margin-top: 0;
+                @include placeholder{
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &__button{
+            button{
+                width: 50%;
+            }
+        }
+        
+        &__burger{
+            display: block;
+            display: flex;
+            align-items: center;
+            svg{
+                width: 50px;
+                fill: $white;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .header{
+
+        &__burger{
+            svg{
+                width: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.sect5{
+    padding: rem(99) 0 rem(97) 0; 
+    
+    &__content{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__blockitem{
+        width: rem(854);
+    }
+
+    &__subtitle{
+        margin-bottom: rem(10);
+    }
+
+    &__desc{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .sect5{
+        padding: 30px 0;
+    }
+}

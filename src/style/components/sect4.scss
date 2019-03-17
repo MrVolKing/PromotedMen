@@ -1,0 +1,31 @@
+.sect4{
+    background-image: url(../images/bg_sect4.png);
+    padding: rem(69) 0;
+    background-size: 100% 100%;
+
+    &__content{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    &__blockitem{
+        width: rem(767);
+        background-color: rgba($white, .9);
+        padding: rem(37) rem(90) rem(41);
+    }
+
+    &__subtitle{
+        margin-bottom: rem(13);
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .sect4{
+
+        &__blockitem{
+            padding: 10px;
+        }
+    }
+}
