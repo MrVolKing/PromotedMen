@@ -1,6 +1,4 @@
     // adapt menu
-
-
 @media screen and (max-width:769px){
     .adaptmenu{
         transform: translateX(100%);
@@ -32,11 +30,9 @@
             width: 100%;
         }
     }
-    
 }
 
 
 .adaptmenu_active{
     transform: translateX(0);
 }
-

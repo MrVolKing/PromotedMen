@@ -7,10 +7,6 @@
         justify-content: space-between;
     }
 
-    // &__left, &__right{
-    //     width: 48%;
-    // }
-
     &__left{
         display: flex;
     }
@@ -48,7 +44,6 @@
             font-size: rem(18);
             font-weight: 300;
             line-height: rem(22);
-            // margin-top: rem(-4);
             &:hover{
                 color: $brand_color_hover;
                 opacity: 1;
@@ -67,7 +62,6 @@
         }
     }
 }
-
 
 
 @media screen and (max-width:769px){
@@ -109,5 +103,4 @@
             }
         }
     }
-        
 }
