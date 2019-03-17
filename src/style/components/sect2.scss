@@ -60,6 +60,8 @@
 
         &__blockitem{
             width: 100%;
+            min-height: auto;
+            padding-bottom: 80px;
         }
 
         &__icn{
@@ -79,6 +81,7 @@
         &__desc{
             margin-bottom: 20px;
             height: auto;
+            min-height: auto !important;
             p{
                 font-size: 15px;
             }
