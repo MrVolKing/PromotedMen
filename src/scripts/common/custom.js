@@ -24,7 +24,6 @@ $(document).ready(() => {
     $(window).resize(function() {
 
         if($(window).width() > '768'){
-            console.log('da');
             $(body).css('overflow', 'visible');
         }
     
@@ -37,10 +36,11 @@ $(document).ready(() => {
           el: '.swiper-pagination',
           clickable: true
         },
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -51,7 +51,8 @@ $(document).ready(() => {
 
 
    
-
+      // animations
+      new WOW().init();
 
 
    

@@ -71,6 +71,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: center;
     }
 
     &__burger{
@@ -81,6 +82,7 @@
 
 @media screen and (max-width:769px){
     .header{
+        height: auto;
 
         &__logo{
             img{
